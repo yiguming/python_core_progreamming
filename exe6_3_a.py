@@ -12,7 +12,11 @@ while 1:
     except ValueError,e:
         print "Error!",e
 
+print "From the small to big"
+print sorted(numberlist)
+
+print "From the big to small"
+print sorted(numberlist,reverse=True)
 
 
-numberlist.sort()
-print numberlist
+
