@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-import math
-def isprime(n):
-    if n <=1:
-        return False
-    for i in range(2,int(math.sqrt(n)+1)):
-        if n % i == 0 :
+def isprime(num):
+    count = num /2
+    while count >1:
+        if num % count == 0 :
             return False
-        return True
+        count -=1
+    return True
+
 
 
 
